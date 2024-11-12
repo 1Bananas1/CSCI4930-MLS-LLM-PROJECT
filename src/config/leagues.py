@@ -1,14 +1,3 @@
-import pandas as pd
-import time
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.options import Options 
-
-player_data = []
-
 leagues = {
     13: {'country': 'England', 'name': 'Premier League'},
     16: {'country': 'France', 'name': 'Ligue 1'},
@@ -61,27 +50,3 @@ leagues = {
     2076: {'country': 'Germany', 'name': '3. Liga'},
     2149: {'country': 'India', 'name': 'Super League'}
 }
-
-
-chromeOptions = Options()
-arguments = [
-    "--disable-extensions",
-    "--disable-notifications",
-    "--disable-infobars",
-    "--disable-popup-blocking",
-    "--incognito",
-    "--blink-settings=imagesEnabled=false"
-]
-
-for arg in arguments:
-    chromeOptions.add_argument(arg)
-
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chromeOptions)
-
-
-
-
-
-
-
-
