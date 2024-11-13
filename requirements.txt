@@ -2,3 +2,4 @@ beautifulsoup4==4.9.3
 selenium==4.0.0
 pandas==1.3.3
 webdriver-manager==3.4.2
+ratelimit==2.2.1
