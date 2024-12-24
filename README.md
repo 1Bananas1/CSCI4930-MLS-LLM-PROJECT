@@ -31,7 +31,7 @@ Run `main.py`
 
 ## Acknowledgements
 
- - [Jimmy MacDonald](https://github.com/1bananas)
+ - [Jimmy MacDonald](https://github.com/1bananas1)
 
 
 
